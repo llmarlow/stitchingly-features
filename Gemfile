@@ -21,6 +21,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'rails_12factor', group: :production
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'simple_form'
+gem 'acts_as_votable', '~> 0.10.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
