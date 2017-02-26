@@ -12,10 +12,6 @@ class FeaturesController < ApplicationController
   def show
   end
 
-  # GET /features/new
-  def new
-    @feature = Feature.new
-  end
 
   # GET /features/1/edit
   def edit
@@ -28,8 +24,8 @@ class FeaturesController < ApplicationController
 
     respond_to do |format|
       if @feature.save
-        format.html { redirect_to @feature, notice: 'Feature was successfully created.' }
-        format.json { render :show, status: :created, location: @feature }
+        format.html { redirect_to features_path, notice: 'Feature was successfully created.' }
+        format.json { render features_path, status: :created, location: @feature }
       else
         format.html { render :new }
         format.json { render json: @feature.errors, status: :unprocessable_entity }
